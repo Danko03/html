@@ -1,0 +1,134 @@
+body{
+    margin: 1vw;
+    position: absolute;
+    background-color: #351;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0.1vw 0.1vw 0.1vw #000,
+    -0.1vw 0.1vw 0.1vw #000,
+    -0.1vw -0.1vw 0.1vw #000,
+    0.1vw -0.1vw 0.1vw #000,
+    0vw 0.1vw 0.1vw #000,
+    0.1vw 0vw 0.1vw #000,
+    0vw -0.1vw 0.1vw #000,
+    -0.1vw 0vw 0.1vw #000;
+}
+
+#container{
+    position: inherit;
+    width: 52vw;
+    height: 38vw;
+    padding: 4vw;
+    left: 20vw;
+    background-color: #462;
+    border-radius: 4vw;
+
+}
+
+h1{
+    margin-top: -3vw;
+    font-size: 3.5vw;
+}
+
+#display{
+    font-size: 2vw;
+    border: 1vw #cb1 solid;
+    background-color: #683;
+    width: 50vw;
+    height: 33vw;
+    border-radius: 1vw;
+}
+
+button{
+    font-size: 2vw;
+    position: absolute;
+    top: 39.2vw;
+    left: 25vw;
+    padding: 1vw;
+    min-width: 10vw;
+    border-radius: 1vw;
+    border: 0.5vw #cb1 solid;
+    background-color: #dc1;
+}
+
+button:hover{
+    cursor: pointer;
+    border: 0.5vw #dc1 solid;
+    background-color: #cb1;
+}
+
+button:active{
+    border: 0.5vw #92c solid;
+    background-color: #e2c;
+}
+
+#game{
+    position: absolute;
+    left: 16vw;
+    top: 11vw;
+    color: #000;
+    text-shadow: none;
+    font-weight: bold;
+    display: grid;
+    font-size: 6vw;
+    font-weight: 900;
+    grid-template-columns: repeat(3, 9vw);
+    grid-template-rows: repeat(3, 9vw);
+}
+
+#x-1y1{
+    border-bottom: 0.5vw #000 solid;
+    border-right: 0.5vw #000 solid;
+}
+
+#x0y1{
+    border-bottom: 0.5vw #000 solid;
+    border-right: 0.5vw #000 solid;
+    border-left: 0.5vw #000 solid;
+}
+
+#x1y1{
+    border-bottom: 0.5vw #000 solid;
+    border-left: 0.5vw #000 solid;
+}
+
+#x-1y0{
+    border-right: 0.5vw #000 solid;
+    border-top: 0.5vw #000 solid;
+    border-bottom: 0.5vw #000 solid;
+}
+
+#x0y0{
+    border-bottom: 0.5vw #000 solid;
+    border-right: 0.5vw #000 solid;
+    border-top: 0.5vw #000 solid;
+    border-left: 0.5vw #000 solid;
+}
+
+#x1y0{
+    border-bottom: 0.5vw #000 solid;
+    border-top: 0.5vw #000 solid;
+    border-left: 0.5vw #000 solid;
+}
+
+#x-1y-1{
+    border-right: 0.5vw #000 solid;
+    border-top: 0.5vw #000 solid;
+}
+
+#x0y-1{
+    border-right: 0.5vw #000 solid;
+    border-top: 0.5vw #000 solid;
+    border-left: 0.5vw #000 solid;
+}
+
+#x1y-1{
+    border-top: 0.5vw #000 solid;
+    border-left: 0.5vw #000 solid;
+}
+
+#x-1y1:hover, #x0y1:hover, #x1y1:hover, #x-1y0:hover, #x0y0:hover, #x1y0:hover, #x-1y-1:hover, #x0y-1:hover, #x1y-1:hover{
+    cursor: pointer;
+    background-color: #dd1;
+}
